@@ -1,24 +1,27 @@
+/* General text */
+p {
+  padding: 0;
+}
 
-/* 1. Nav styling */
+/* Navigation bar */
 nav {
   background-color: steelblue;
   padding: 10px;
 }
 
 nav a {
-  color: white;            /* link text color */
-  padding: 10px;           /* space around each link */
-  display: block;          /* full clickable area per link */
-  text-decoration: none;   /* no underline */
+  color: white;
+  padding: 10px;
+  display: block;
+  text-decoration: none;
 }
 
-
-/* 2. h1 styling */
+/* Heading */
 h1 {
   color: steelblue;
 }
 
-/* 3. Profile image inside main */
+/* Profile image inside main */
 main img {
   width: 150px;
   height: auto;
@@ -27,14 +30,14 @@ main img {
   box-shadow: 0 0 5px rgba(0,0,0,0.2);
 }
 
-/* 4. Main container width */
+/* Limit main content width */
 main {
   max-width: 60rem;
   margin: 0 auto;
   padding: 1rem;
 }
 
-/* 5. Aside styling */
+/* Aside block */
 aside {
   width: 20rem;
   margin: 1rem auto;
@@ -45,22 +48,16 @@ aside {
   text-align: center;
 }
 
-/* 6. Aside image */
+/* Aside image */
 aside img {
   width: 200px;
   height: auto;
 }
 
-/* 7. Paragraph padding reset */
-p {
-  padding: 0;
-}
-
-/* 8. Footer styling */
+/* Footer styling */
 footer {
   margin-top: 2rem;
   border-top: 1px solid rgb(0 0 0 / 0.2);
   text-align: center;
   padding: 1rem 0;
 }
-
