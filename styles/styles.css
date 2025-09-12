@@ -6,11 +6,12 @@ nav {
 }
 
 nav a {
-  color: white;
-  padding: 10px;
-  display: inline-block; /* or block if you prefer stacked links */
-  text-decoration: none;
+  color: white;            /* link text color */
+  padding: 10px;           /* space around each link */
+  display: block;          /* full clickable area per link */
+  text-decoration: none;   /* no underline */
 }
+
 
 /* 2. h1 styling */
 h1 {
@@ -62,3 +63,4 @@ footer {
   text-align: center;
   padding: 1rem 0;
 }
+
