@@ -1,0 +1,41 @@
+/* Limit main content width and center it */
+main {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Style the main profile image */
+main img {
+  width: 150px; /* smaller profile image */
+  height: auto;
+}
+
+/* Reset paragraph padding */
+p {
+  padding: 0;
+}
+
+/* Aside styling */
+aside {
+  width: 20rem;
+  margin: 1rem auto;
+  border: 1px solid rgb(0 0 0 / 0.2);
+  padding: 1rem;
+  background-color: #eee;
+  color: #333;
+  text-align: center;
+}
+
+aside img {
+  width: 200px;
+  height: auto; /* keep aspect ratio */
+}
+
+/* Footer styling */
+footer {
+  margin-top: 2rem; /* space above footer */
+  border-top: 1px solid rgb(0 0 0 / 0.2);
+  text-align: center;
+  padding: 1rem 0;
+}
