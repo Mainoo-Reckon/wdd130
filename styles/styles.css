@@ -48,14 +48,10 @@ main {
   padding: 1rem;
 }
 
-/* Aside block */
+/* Aside block (cleaned up) */
 aside {
   width: 20rem;
   margin: 1rem auto;
-  border: 1px solid rgb(0 0 0 / 0.2);
-  padding: 1rem;
-  background-color: #eee;
-  color: #333;
   text-align: center;
   position: relative; /* needed for heading overlay */
 }
@@ -77,14 +73,6 @@ aside img {
   height: auto;
 }
 
-/* Footer styling */
-footer {
-  margin-top: 2rem;
-  border-top: 1px solid rgb(0 0 0 / 0.2);
-  text-align: center;
-  padding: 1rem 0;
-}
-
 /* ===== Class Selectors ===== */
 .box {
   margin: 1rem;
@@ -93,4 +81,5 @@ footer {
   background-color: #f5f5f5;
   color: #333;
 }
+
 
