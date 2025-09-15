@@ -1,0 +1,111 @@
+/* ======================
+   CSS VARIABLES
+====================== */
+:root {
+  --primary-color: #005f73;
+  --accent1-color: #0a9396;
+  --heading-font: Arial, Helvetica, sans-serif;
+  --body-font: Verdana, Geneva, sans-serif;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+}
+
+/* LAYOUT WIDTH */
+header, main, footer {
+  width: 840px;
+  margin: 0 auto;
+}
+
+/* HEADINGS */
+h1, h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+/* NAV + BASIC SPACING */
+nav, p, section, article {
+  margin: 16px;
+  padding: 8px;
+}
+
+/* HEADER LOGO */
+.logo {
+  max-width: 150px;
+  height: auto;
+  display: block;
+}
+
+/* NAV LINKS */
+nav a {
+  margin-right: 16px;
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+/* SOCIAL MEDIA LINKS - remove underline */
+.socialmedia a {
+  text-decoration: none;
+}
+
+/* HERO SECTION */
+.hero {
+  position: relative; /* for absolute children */
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* HERO HEADING OVERLAY */
+.hero h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  opacity: 0.7;
+  background-color: var(--accent1-color);
+  color: #fff;
+}
+
+/* ARTICLE INSIDE HERO */
+.hero article {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background-color: rgba(255,255,255,0.8);
+  padding: 16px;
+}
+
+/* ARTICLE IMAGE (ONLY INSIDE HERO) */
+.hero article img {
+  float: right;
+  width: 125px;
+  margin-left: 10px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer img {
+  width: 32px;
+  height: 32px;
+  margin: 0 5px;
+}
