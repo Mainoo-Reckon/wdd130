@@ -39,6 +39,14 @@ nav, p, section, article {
   padding: 8px;
 }
 
+/* HEADER FLEX LAYOUT */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+}
+
 /* HEADER LOGO */
 .logo {
   max-width: 150px;
@@ -51,6 +59,7 @@ nav a {
   margin-right: 16px;
   text-decoration: none;
   color: var(--primary-color);
+  font-weight: bold;
 }
 
 /* SOCIAL MEDIA LINKS - remove underline */
@@ -79,6 +88,7 @@ nav a {
   opacity: 0.7;
   background-color: var(--accent1-color);
   color: #fff;
+  font-size: 2rem;
 }
 
 /* ARTICLE INSIDE HERO */
@@ -96,12 +106,22 @@ nav a {
   float: right;
   width: 125px;
   margin-left: 10px;
+  border-radius: 4px;
+}
+
+/* Clear floats after article */
+.hero article::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 /* FOOTER */
 footer {
   text-align: center;
   margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid #ccc;
 }
 
 footer img {
@@ -109,3 +129,4 @@ footer img {
   height: 32px;
   margin: 0 5px;
 }
+
