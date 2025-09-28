@@ -41,13 +41,21 @@ nav, p, section, article {
   padding: 8px;
 }
 
-/* HEADER FLEX LAYOUT */
+/* HEADER GRID LAYOUT */
 header {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto 1fr; /* logo then nav */
   align-items: center;
   padding-top: 16px;
 }
+
+/* NAV FLEX INSIDE HEADER */
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem; /* space between links */
+}
+
 
 /* HEADER LOGO */
 .logo {
@@ -182,5 +190,6 @@ footer .socialmedia img {
   width: 32px;
   height: 32px;
 }
+
 
 
