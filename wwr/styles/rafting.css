@@ -2,11 +2,12 @@
    CSS VARIABLES
 ====================== */
 :root {
-  --primary-color: #005f73;
-  --accent1-color: #0a9396;
+  --primary-color: #004457;       /* darker navy */
+  --accent1-color: #065c60;       /* darker teal */
   --heading-font: Arial, Helvetica, sans-serif;
   --body-font: Verdana, Geneva, sans-serif;
 }
+
 
 /* RESET */
 * {
@@ -93,17 +94,18 @@ nav a:last-child {
 }
 
 /* HERO HEADING OVERLAY */
-.hero h1 {
+ .hero h1 {
   position: absolute;
   top: 20px;
   width: 100%;
   padding: 16px;
   text-align: center;
-  opacity: 0.7;
-  background-color: var(--accent1-color);
+  background-color: var(--accent1-color); /* solid */
   color: #fff;
   font-size: 2rem;
+  opacity: 1; /* no transparency */
 }
+
 
 /* ARTICLE INSIDE HERO */
 .hero article {
@@ -190,6 +192,7 @@ footer .socialmedia img {
   width: 32px;
   height: 32px;
 }
+
 
 
 
