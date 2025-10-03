@@ -1,1 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact White Water Rafting Company. Get in touch with us for reservations, questions, or suggestions.">
+  <meta name="author" content="Augustine Mainoo">
+  <title>Contact Us | White Water Rafting</title>
+  <link rel="stylesheet" href="./styles/rafting.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <img src="images/logo.png" alt="White Water Rafting Logo" class="logo">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="trips.html">Trips</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <!-- COMPANY INFO -->
+    <section class="company-info">
+      <h1>White Water Rafting Company</h1>
+      <p>123 Main River Street<br>Kolob, California</p>
+      <p>Phone: +1 999 999 9999</p>
+      <p>Email: <a href="mailto:info@whitewater.com">info@whitewater.com</a></p>
+
+      <!-- Google Map Embed -->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18..."
+        width="600"
+        height="450"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section class="contact-form">
+      <h2>Get in Touch</h2>
+      <form action="#" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+        <p>Message Purpose:</p>
+        <label><input type="radio" name="purpose" value="general" required> General Inquiry</label><br>
+        <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label><br>
+        <label><input type="radio" name="purpose" value="website"> Website Suggestion</label>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+
+        <label>
+          <input type="checkbox" name="newsletter">
+          Please subscribe me to the monthly newsletter
+        </label>
+
+        <button type="submit">Get in Touch!</button>
+      </form>
+    </section>
+
+    <!-- EMPLOYEES -->
+    <section class="employees">
+      <h2>We Are Here to Serve You</h2>
+      <figure>
+        <img src="images/employee1.jpg" alt="Employee 1">
+        <figcaption>John Doe – Tour Guide</figcaption>
+      </figure>
+      <figure>
+        <img src="images/employee2.jpg" alt="Employee 2">
+        <figcaption>Jane Smith – Reservation Manager</figcaption>
+      </figure>
+      <figure>
+        <img src="images/employee3.jpg" alt="Employee 3">
+        <figcaption>Mike Brown – Safety Instructor</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 White Water Rafting | Augustine Mainoo</p>
+    <nav class="socialmedia" aria-label="Social Media Links">
+      <a href="https://facebook.com"><img src="images/facebook-icon.png" alt="Facebook"></a>
+      <a href="https://twitter.com"><img src="images/twitter_icon.png" alt="Twitter"></a>
+      <a href="https://instagram.com"><img src="images/instagram-icon.png" alt="Instagram"></a>
+    </nav>
+  </footer>
+</body>
+</html>
 
