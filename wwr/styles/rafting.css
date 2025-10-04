@@ -99,31 +99,33 @@
 /* =======================
    FOOTER SOCIAL ICONS
 ======================= */
+footer {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+footer p {
+  margin-bottom: 0.5rem;
+}
+
 .socialmedia {
   display: flex;
-  justify-content: center;
+  justify-content: center;   /* center icons */
   align-items: center;
-  gap: 12px; /* spacing between icons */
-  margin-top: 1rem;
+  gap: 15px;                 /* space between icons */
+  margin-top: 0.5rem;
 }
 
 .socialmedia img {
-  width: 32px !important;   /* medium size */
-  height: 32px !important;
-  max-width: 32px !important;
-  max-height: 32px !important;
+  width: 40px;   /* medium size */
+  height: 40px;
   object-fit: contain;
-  display: inline-block;
   transition: transform 0.2s ease;
 }
 
 .socialmedia img:hover {
-  transform: scale(1.2); /* subtle zoom on hover */
+  transform: scale(1.2);
 }
-
-
-
-
 
 
 
