@@ -22,78 +22,83 @@
 
   <!-- MAIN -->
   <main>
-    <!-- COMPANY INFO -->
-    <section class="company-info">
-      <h1>White Water Rafting Company</h1>
-      <p>123 Main River Street<br>Kolob, California</p>
-      <p>Phone: +1 999 999 9999</p>
-      <p>Email: <a href="mailto:info@whitewater.com">info@whitewater.com</a></p>
+    <!-- COMPANY INFO + MAP + FORM GRID -->
+    <section class="contact-wrapper">
+      <!-- COMPANY INFO -->
+      <div class="company-info">
+        <h1>White Water Rafting Company</h1>
+        <p>123 Main River Street<br>Kolob, California</p>
+        <p>Phone: +1 999 999 9999</p>
+        <p>Email: <a href="mailto:info@whitewater.com">info@whitewater.com</a></p>
 
-      <!-- Google Map Embed -->
-      <iframe
-        src="https://www.google.com/maps/embed?pb=PASTE_YOUR_ACTUAL_MAP_LINK_HERE"
-        width="600"
-        height="450"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
-    </section>
+        <!-- Google Map Embed -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=PASTE_YOUR_ACTUAL_MAP_LINK_HERE"
+          width="600"
+          height="300"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
 
-    <!-- CONTACT FORM -->
-    <section class="contact-form">
-      <h2>Get in Touch</h2>
-      <form action="#" method="post">
-        
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Your Name" required>
+      <!-- CONTACT FORM -->
+      <div class="contact-form">
+        <h2>Get in Touch</h2>
+        <form action="#" method="post" aria-label="Contact Form">
+          
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
 
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Your Email" required>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
 
-        <fieldset>
-          <legend>Message Purpose:</legend>
-          <label for="purpose-general">
-            <input type="radio" id="purpose-general" name="purpose" value="general" required>
-            General Inquiry
+          <fieldset>
+            <legend>Message Purpose:</legend>
+            <label for="purpose-general">
+              <input type="radio" id="purpose-general" name="purpose" value="general" required>
+              General Inquiry
+            </label>
+            <label for="purpose-reservation">
+              <input type="radio" id="purpose-reservation" name="purpose" value="reservation">
+              Reservation Question
+            </label>
+            <label for="purpose-website">
+              <input type="radio" id="purpose-website" name="purpose" value="website">
+              Website Suggestion
+            </label>
+          </fieldset>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+
+          <label for="newsletter">
+            <input type="checkbox" id="newsletter" name="newsletter">
+            Please subscribe me to the monthly newsletter
           </label>
-          <label for="purpose-reservation">
-            <input type="radio" id="purpose-reservation" name="purpose" value="reservation">
-            Reservation Question
-          </label>
-          <label for="purpose-website">
-            <input type="radio" id="purpose-website" name="purpose" value="website">
-            Website Suggestion
-          </label>
-        </fieldset>
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
-
-        <label for="newsletter">
-          <input type="checkbox" id="newsletter" name="newsletter">
-          Please subscribe me to the monthly newsletter
-        </label>
-
-        <button type="submit">Get in Touch!</button>
-      </form>
+          <button type="submit">Get in Touch!</button>
+        </form>
+      </div>
     </section>
 
     <!-- EMPLOYEES -->
     <section class="employees">
       <h2>We Are Here to Serve You</h2>
-      <figure>
-        <img src="images/employee1.jpg" alt="John Doe, rafting tour guide smiling in gear">
-        <figcaption>John Doe – Tour Guide</figcaption>
-      </figure>
-      <figure>
-        <img src="images/employee2.jpg" alt="Jane Smith, reservation manager at desk">
-        <figcaption>Jane Smith – Reservation Manager</figcaption>
-      </figure>
-      <figure>
-        <img src="images/employee3.jpg" alt="Mike Brown, safety instructor during training">
-        <figcaption>Mike Brown – Safety Instructor</figcaption>
-      </figure>
+      <div class="employee-list">
+        <figure>
+          <img src="images/employee1.jpg" alt="John Doe, rafting tour guide smiling in gear">
+          <figcaption>John Doe – Tour Guide</figcaption>
+        </figure>
+        <figure>
+          <img src="images/employee2.jpg" alt="Jane Smith, reservation manager at desk">
+          <figcaption>Jane Smith – Reservation Manager</figcaption>
+        </figure>
+        <figure>
+          <img src="images/employee3.jpg" alt="Mike Brown, safety instructor during training">
+          <figcaption>Mike Brown – Safety Instructor</figcaption>
+        </figure>
+      </div>
     </section>
   </main>
 
@@ -114,4 +119,5 @@
   </footer>
 </body>
 </html>
+
 
