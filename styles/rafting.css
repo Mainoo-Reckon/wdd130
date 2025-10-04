@@ -1,4 +1,3 @@
-
 /* =======================
    RESET DEFAULTS
 ======================= */
@@ -87,61 +86,5 @@ main {
 .contact-form textarea {
   padding: 8px;
   border: 1px solid #ccc;
-  border-radius: 5px;
-}
+  border-ra
 
-.contact-form input[type="radio"],
-.contact-form input[type="checkbox"] {
-  margin-right: 8px;
-}
-
-/* Submit Button */
-button {
-  background-color: steelblue;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  font-size: 1rem;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-button:hover {
-  background-color: darkblue;
-}
-
-/* Employee Section */
-.employees {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin-top: 2rem;
-  text-align: center;
-}
-
-.employees figure {
-  width: 200px;
-  margin: 1rem;
-}
-
-.employees img {
-  width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.2);
-}
-
-/* =======================
-   FOOTER
-======================= */
-footer {
-  background-color: steelblue;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
-}
-
-footer nav a img {
-  width: 24px;
-  margin: 0 8px;
-}
