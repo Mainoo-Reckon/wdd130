@@ -175,7 +175,7 @@ footer {
   justify-content: space-between; /* text left, icons right */
   align-items: center;
   margin-top: 20px;
-  padding-top: 16px;
+  padding-top: 16p
   border-top: 1px solid #ccc;
 }
 
@@ -192,6 +192,41 @@ footer .socialmedia img {
   width: 32px;
   height: 32px;
 }
+/* CONTACT FORM */
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-form label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: var(--accent1-color);
+}
+
+
 
 
 
