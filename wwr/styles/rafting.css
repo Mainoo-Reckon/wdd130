@@ -117,15 +117,17 @@ footer p {
 }
 
 .socialmedia img {
-  width: 40px;   /* medium size */
-  height: 40px;
+  width: 45px !important;   /* medium size */
+  height: 45px !important;
   object-fit: contain;
   transition: transform 0.2s ease;
 }
 
+
 .socialmedia img:hover {
   transform: scale(1.2);
 }
+
 
 
 
