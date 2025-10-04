@@ -103,13 +103,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 10px;  /* tighter spacing */
   margin-top: 1rem;
 }
 
 .socialmedia img {
-  width: 10px;   /* force smaller size */
-  height: 10px;
+  width: 20px !important;   /* force smaller size */
+  height: 20px !important;
   display: inline-block;
   transition: transform 0.2s ease;
 }
