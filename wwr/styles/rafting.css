@@ -103,24 +103,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;  /* tighter spacing */
+  gap: 12px; /* spacing between icons */
   margin-top: 1rem;
 }
 
 .socialmedia img {
-  width: 40px !important;   /* force smaller size */
-  height: 40px !important;
+  width: 32px !important;   /* medium size */
+  height: 32px !important;
+  max-width: 32px !important;
+  max-height: 32px !important;
+  object-fit: contain;
   display: inline-block;
   transition: transform 0.2s ease;
 }
 
 .socialmedia img:hover {
-  transform: scale(1.2);
+  transform: scale(1.2); /* subtle zoom on hover */
 }
-
-
-
-
 
 
 
