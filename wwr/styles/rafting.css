@@ -96,16 +96,21 @@
     align-items: center;
   }
 }
-/* FOOTER SOCIAL ICONS */
+/* =======================
+   FOOTER SOCIAL ICONS
+======================= */
 footer .socialmedia img {
-  width: 20px;   /* smaller size */
-  height: 20px;
+  width: 24px;   /* adjust icon size */
+  height: 24px;
+  margin: 0 5px;
 }
 
 footer .socialmedia img:hover {
   transform: scale(1.2);
   transition: transform 0.2s ease;
 }
+
+
 
 
 
