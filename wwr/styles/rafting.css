@@ -98,14 +98,15 @@
 }
 /* FOOTER SOCIAL ICONS */
 footer .socialmedia img {
-  width: 24px;   /* smaller size */
-  height: 24px;
+  width: 20px;   /* smaller size */
+  height: 20px;
 }
 
 footer .socialmedia img:hover {
   transform: scale(1.2);
   transition: transform 0.2s ease;
 }
+
 
 
 
