@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +16,7 @@
       <a href="index.html">Home</a>
       <a href="about.html">About Us</a>
       <a href="trips.html">Trips</a>
-      <a href="contact.html" class="active">Contact</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
@@ -31,7 +31,7 @@
 
       <!-- Google Map Embed -->
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18..."
+        src="https://www.google.com/maps/embed?pb=PASTE_YOUR_ACTUAL_MAP_LINK_HERE"
         width="600"
         height="450"
         allowfullscreen=""
@@ -44,33 +44,37 @@
     <section class="contact-form">
       <h2>Get in Touch</h2>
       <form action="#" method="post">
-        <!-- Name -->
+        
         <label for="name">Name</label>
         <input type="text" id="name" name="name" placeholder="Your Name" required>
 
-        <!-- Email -->
         <label for="email">Email</label>
         <input type="email" id="email" name="email" placeholder="Your Email" required>
 
-        <!-- Radio buttons grouped -->
         <fieldset>
-          <legend>Message Purpose</legend>
-          <label><input type="radio" id="purpose-general" name="purpose" value="general" required> General Inquiry</label>
-          <label><input type="radio" id="purpose-reservation" name="purpose" value="reservation"> Reservation Question</label>
-          <label><input type="radio" id="purpose-website" name="purpose" value="website"> Website Suggestion</label>
+          <legend>Message Purpose:</legend>
+          <label for="purpose-general">
+            <input type="radio" id="purpose-general" name="purpose" value="general" required>
+            General Inquiry
+          </label>
+          <label for="purpose-reservation">
+            <input type="radio" id="purpose-reservation" name="purpose" value="reservation">
+            Reservation Question
+          </label>
+          <label for="purpose-website">
+            <input type="radio" id="purpose-website" name="purpose" value="website">
+            Website Suggestion
+          </label>
         </fieldset>
 
-        <!-- Message -->
         <label for="message">Message</label>
         <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
 
-        <!-- Newsletter -->
-        <label for="newsletter" class="newsletter">
+        <label for="newsletter">
           <input type="checkbox" id="newsletter" name="newsletter">
           Please subscribe me to the monthly newsletter
         </label>
 
-        <!-- Submit -->
         <button type="submit">Get in Touch!</button>
       </form>
     </section>
@@ -79,15 +83,15 @@
     <section class="employees">
       <h2>We Are Here to Serve You</h2>
       <figure>
-        <img src="images/employee1.jpg" alt="Employee 1 smiling in rafting gear">
+        <img src="images/employee1.jpg" alt="John Doe, rafting tour guide smiling in gear">
         <figcaption>John Doe – Tour Guide</figcaption>
       </figure>
       <figure>
-        <img src="images/employee2.jpg" alt="Employee 2 at reservation desk">
+        <img src="images/employee2.jpg" alt="Jane Smith, reservation manager at desk">
         <figcaption>Jane Smith – Reservation Manager</figcaption>
       </figure>
       <figure>
-        <img src="images/employee3.jpg" alt="Employee 3 in safety training">
+        <img src="images/employee3.jpg" alt="Mike Brown, safety instructor during training">
         <figcaption>Mike Brown – Safety Instructor</figcaption>
       </figure>
     </section>
@@ -110,5 +114,4 @@
   </footer>
 </body>
 </html>
-
 
