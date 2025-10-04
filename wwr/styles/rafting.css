@@ -1,21 +1,194 @@
-/* CONTACT WRAPPER (Map + Form) */
-.contact-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  margin-top: 2rem;
+/* ======================
+   CSS VARIABLES
+====================== */
+:root {
+  --primary-color: #004457;       /* darker navy */
+  --accent1-color: #065c60;       /* darker teal */
+  --heading-font: Arial, Helvetica, sans-serif;
+  --body-font: Verdana, Geneva, sans-serif;
 }
 
-/* COMPANY INFO */
-.company-info {
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+}
+
+/* LAYOUT WIDTH */
+header, main, footer {
+  max-width: 840px;  /* responsive */
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* HEADINGS */
+h1, h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+/* NAV + BASIC SPACING */
+nav, p, section, article {
+  margin: 16px 0;
+  padding: 8px;
+}
+
+/* HEADER GRID LAYOUT */
+header {
+  display: grid;
+  grid-template-columns: auto 1fr; /* logo then nav */
+  align-items: center;
+  padding-top: 16px;
+}
+
+/* NAV FLEX INSIDE HEADER */
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem; /* space between links */
+}
+
+/* HEADER LOGO */
+.logo {
+  max-width: 150px;
+  height: auto;
+  display: block;
+}
+
+/* NAV LINKS */
+nav a {
+  margin-right: 16px;
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+nav a:last-child {
+  margin-right: 0;
+}
+
+/* SOCIAL MEDIA LINKS - remove underline */
+.socialmedia a {
+  text-decoration: none;
+}
+
+/* HERO SECTION */
+.hero {
+  position: relative; /* for absolute children */
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* HERO HEADING OVERLAY */
+.hero h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  background-color: var(--accent1-color); /* solid */
+  color: #fff;
+  font-size: 2rem;
+  opacity: 1; /* no transparency */
+}
+
+/* ARTICLE INSIDE HERO */
+.hero article {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background-color: rgba(255,255,255,0.8);
+  padding: 16px;
+}
+
+/* ARTICLE IMAGE (ONLY INSIDE HERO) */
+.hero article img {
+  float: right;
+  width: 125px;
+  margin-left: 10px;
+  border-radius: 4px;
+}
+
+/* Clear floats after article */
+.hero article::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* HISTORY SECTION GRID */
+.history {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+.history img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+/* ADVENTURES SECTION */
+.adventures {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
   text-align: center;
 }
 
-.company-info iframe {
+.adventures figure {
+  flex: 1 1 18%; /* 5 across */
+}
+
+.adventures img {
   width: 100%;
-  border: none;
-  border-radius: 8px;
-  margin-top: 1rem;
+  border-radius: 4px;
+}
+
+.adventures figcaption {
+  margin-top: 4px;
+  font-size: 0.9rem;
+  color: var(--primary-color);
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  justify-content: space-between; /* text left, icons right */
+  align-items: center;
+  margin-top: 20px;
+  padding-top: 16px; /* ✅ fixed */
+  border-top: 1px solid #ccc;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .socialmedia {
+  display: flex;
+  gap: 8px;
+}
+
+footer .socialmedia img {
+  width: 32px;
+  height: 32px;
 }
 
 /* CONTACT FORM */
@@ -23,10 +196,13 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .contact-form label {
   font-weight: bold;
+  margin-top: 10px;
 }
 
 .contact-form input,
@@ -49,84 +225,8 @@
   background-color: var(--accent1-color);
 }
 
-/* EMPLOYEES SECTION */
-.employees {
-  margin-top: 3rem;
-  text-align: center;
-}
-
-.employees h2 {
-  margin-bottom: 1.5rem;
-}
-
-.employee-list {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
-
-.employees figure {
-  text-align: center;
-  max-width: 200px;
-}
-
-.employees img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 2px solid var(--accent1-color);
-}
-
-.employees figcaption {
-  margin-top: 0.5rem;
-  font-size: 0.9rem;
-  color: var(--primary-color);
-}
-
-/* RESPONSIVE DESIGN */
-@media (max-width: 768px) {
-  .contact-wrapper {
-    grid-template-columns: 1fr;
-  }
-
-  .employee-list {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-/* =======================
-   FOOTER SOCIAL ICONS
-======================= */
-footer {
-  text-align: center;
-  padding: 1rem 0;
-}
-
-footer p {
-  margin-bottom: 0.5rem;
-}
-
-.socialmedia {
-  display: flex;
-  justify-content: center;   /* center icons */
-  align-items: center;
-  gap: 15px;                 /* space between icons */
-  margin-top: 0.5rem;
-}
-
-.socialmedia img {
-  width: 45px !important;   /* medium size */
-  height: 45px !important;
-  object-fit: contain;
-  transition: transform 0.2s ease;
-}
 
 
-.socialmedia img:hover {
-  transform: scale(1.2);
-}
 
 
 
