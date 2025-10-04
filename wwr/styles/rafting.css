@@ -108,8 +108,8 @@
 }
 
 .socialmedia img {
-  width: 30px;   /* force smaller size */
-  height: 30px;
+  width: 10px;   /* force smaller size */
+  height: 10px;
   display: inline-block;
   transition: transform 0.2s ease;
 }
@@ -117,6 +117,7 @@
 .socialmedia img:hover {
   transform: scale(1.2);
 }
+
 
 
 
